@@ -1,6 +1,6 @@
 # Research Proposal: Personal Investing Dashboard
 
-By Justin Reed, Maria Maragkelli, Reghan Hesser
+By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 
 ## Research Question
 
@@ -26,8 +26,8 @@ This section should cover:
     - What are the sample conditions? (Years, restrictions you anticipate (e.g. exclude or require some industries)
     - What variables are absolutely necessary and what would you like to have if possible?
 2. What data do we have and what data do we need?
-3. How will we colelct more data?
-4. What ar ethe raw inputs and how will you store them  (the folder structure(s) for each input type)?
+3. How will we collect more data?
+4. What are the raw inputs and how will you store them (the folder structure(s) for each input type)?
 5. Speculate at a high level (not specific code!) about how you’ll transform the raw data into the final form.
 
 
@@ -36,15 +36,23 @@ This section should cover:
 
 1. DC: Defined contribution
     - Every year, Americans contribute about 5% of their total employee compensation to defined contribution (DC) pension plans
-2. QDIA: Qualified Default Investment Alternative
+2. PPA: Pension Protection Act of 2006
+    - Created safe harbors for employers for default options in DC plans
+    - These are QDIAs
+3. QDIA: Qualified Default Investment Alternative
     - Default options in DC plans
     - Most popular type of QDIA is a portfolio that provides "long-term appreciation and capital preservation through a mix of equity and fixed income exposures based on the participant's age"
     - Regulators rely on "generally accepted investment theories"
     - Basically advice is split investments across stocks and bonds and invest more in stocks while young than while old.
-3. TDF: Target-date fund
+4. TDF: Target-date fund
     - This is a type of QDIA
     - A TDF basically targets a specific year as the retirement age and then rebalances the fund every so often according to that target
     - Effectively as retiree moves closer to retirement date, stocks $\downarrow$ and bonds $\uparrow$
+5. SSA: Social Security Administration
+6. Stocks/I
+    - 50% domestic stocks/ 50% international stocks portfolio
+7. Stocks
+    - 100% domestic stocks portfolio
 
 
 
@@ -54,4 +62,43 @@ This section should cover:
 - Evaluate strategies based on: Wealth at retirement, retirement income, conservation of savings, and bequest at death.
   - Study lifecycle portfolios on long-horizon returns rather than short-horizon (monthly/annual) returns given nature of retirement investing
 - Simple, all-equity portfolio outperforms QDIAs across all retirement outcomes.
-- Strategy of 50% in domestic stocks and 50% international stocks throughout one's lifetime (Not a QDIA) dominates QDIAs in capital preservation
+- Strategy of 50% in domestic stocks and 50% international stocks throughout one's lifetime (Not a QDIA) dominates QDIAs in long-term appreciation, higher initial retirement consumption, also compares favorably in capital preservation
+- 50/50 less likely to exhaust savings and more likely to leave large inheritance
+- Non QDIA strategy beats TDF/other QDIAs in achieving PPA goals
+- See below, but effectively Stocks/I dominates TDF
+  - However Stocks/I has a larger intermediate drawdown than TDF
+  - Regulations stipulate QDIAs be "diversified so as to minimize the risk of large losses"
+  - Department of Labor and SEC held joint hearing in 2009 to discuss large TDF losses from '08 crash
+  - Minimizing intermediate drawdowns appears to be priority for regulators regardless of retirement outcomes
+  - Policy issue? Should regulation focus on minimizing psychological pain of intermediate drawdowns vs maximizing economic outcomes of retirement savers given vast performance disparities
+
+
+**4 Discussed Strategies**
+- Money Market
+- Stocks (100% domestic)
+  - 30% higher average retirement compared to TDF
+  - Worse left-tail outcomes
+  - 17.4% ruin probability
+- Stocks/I (50dom/50int)
+  - 32% higher average retirement compared to TDF
+  - Favored relative to TDF through entire distribution of wealth outcomes
+  - 8.2% ruin probability
+  - Dominates TDF in retirement consumption levels (wealthier people can spend more)
+- TDF
+  - 16.9% ruin probability
+
+
+### Terms of Simulation
+
+- Lifecycle of US Couple (Male/Female)
+  - Save during working years, consumes during retirement years
+- Adopt a lifetime portfolio strategy
+- Save portion of their monthly income at age 25
+  - Model uncertain labor income using model of Guvenen, Karahan, Ozkan, and Song (20221)
+- Retire at 65
+- Receive Social Security
+- Draw on savings using 4% rule
+  - The 4% rule dictates that the couple withdraws 4% of their initial retirement wealth balance in the first year and then withdraws equal inflation-adjusted amounts in subsequent years. The 4% rule is ubiquitous in financial advice on retirement spending [see Anarkulova, Cederburg, O’Doherty, and Sias (2023) and cites therein].
+- Simulated investment outcomes based on historical developed country asset-class returns and the couple's portfolio weights
+- Longevity modeled on SSA mortality tables
+- Couple leaves inheritance once both have died.
