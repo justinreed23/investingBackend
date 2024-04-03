@@ -8,6 +8,8 @@ This section should cover:
 
 1. What do we want to know or what problems are we trying to solve? As in the midterm, you should list (1) the “bigger” question/debate/problem you’re interested in, and also (2) the specific research question(s) you’ll actually try to answer.
 
+For retirement purposes is it better to invest in an all equity portfolio or a traditional TDF?
+
     - The research question will be smaller in scope than the big picture question. But the answer to your specific research question should shed light on the bigger question (although it likely won’t conclusively answer it).
 
     - The answer to your specific research question should shed light on the bigger question (although it likely won’t conclusively answer it).
@@ -53,6 +55,7 @@ This section should cover:
     - 50% domestic stocks/ 50% international stocks portfolio
 7. Stocks
     - 100% domestic stocks portfolio
+8. IID: Independently and identically distributed (returns)
 
 
 
@@ -71,6 +74,9 @@ This section should cover:
   - Department of Labor and SEC held joint hearing in 2009 to discuss large TDF losses from '08 crash
   - Minimizing intermediate drawdowns appears to be priority for regulators regardless of retirement outcomes
   - Policy issue? Should regulation focus on minimizing psychological pain of intermediate drawdowns vs maximizing economic outcomes of retirement savers given vast performance disparities
+- Under US-IID Method (Method that uses only US returns relying on short term evenly distributed data)
+  - TDFs seem favorable compared to Stocks/I for capital preservation
+  - However, acknowledging returns are NOT IID ***OR*** that US sample presents a severe small sample problem for long-horizon asset performance restores dominance of Stocks/I
 
 
 **4 Discussed Strategies**
