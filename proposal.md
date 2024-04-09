@@ -17,7 +17,7 @@ For retirement purposes is it better to invest in an all equity portfolio or a t
 2. If your project is about relationships, what are the hypotheses you’re testing?
 
 3. If your project is about prediction, what is your metrics of success? (What are you maximizing?) Can you find a baseline from prior work to give you a ball park to aim for?
-
+   -Maximize the amount of money our generated portfolios have at retirement
 ## Necessary Data
 
 This section should cover:
