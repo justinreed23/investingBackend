@@ -4,6 +4,13 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 
 ## Research Question
 
+Given certain investment parameters, what is the optimal personal investment strategy for retirement?
+
+How do different inheritance goals affect portfolio optimization for retirement?
+
+How does age affect risk aversion
+
+
 This section should cover:
 
 1. What do we want to know or what problems are we trying to solve? As in the midterm, you should list (1) the “bigger” question/debate/problem you’re interested in, and also (2) the specific research question(s) you’ll actually try to answer.
