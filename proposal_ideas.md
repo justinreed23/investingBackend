@@ -4,7 +4,7 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 
 ## Research Question
 
-Given certain investment parameters, what is the optimal personal investment strategy for retirement?
+Given certain investment parameters, what is the optimal portfolio for retirement?
 
 How do different inheritance goals affect portfolio optimization for retirement?
 
@@ -33,19 +33,17 @@ This section should cover:
 
 1. What does the final dataset need to look like (mostly dictated by the question and the availability of data):
     - What is an observation, e.g. a firm, or a firm-year, etc.
-          - Observation is daily-portfolio-returns
+          - Observation is portfolio-returns
     - What is the sample period?
           - 1959-2019
     - What are the sample conditions? (Years, restrictions you anticipate (e.g. exclude or require some industries)
           - 60 years, 10 portfolios
-          - International stocks defined in paper
     - What variables are absolutely necessary and what would you like to have if possible?
           - returns
-          - years
 2. What data do we have and what data do we need?
-        - Data from the paper
+        - Need data showing monthly returns for 10 portfolios over a long timespan
 4. How will we collect more data?
-5.     stealing from the paper
+
 6. What are the raw inputs and how will you store them (the folder structure(s) for each input type)?
 7. 
 8. Speculate at a high level (not specific code!) about how you’ll transform the raw data into the final form.
