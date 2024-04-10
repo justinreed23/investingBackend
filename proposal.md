@@ -4,6 +4,13 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 
 ## Research Question
 
+Given certain investment parameters, what is the optimal personal investment strategy for retirement?
+
+How do different inheritance goals affect portfolio optimization for retirement?
+
+How does age affect risk aversion
+
+
 This section should cover:
 
 1. What do we want to know or what problems are we trying to solve? As in the midterm, you should list (1) the “bigger” question/debate/problem you’re interested in, and also (2) the specific research question(s) you’ll actually try to answer.
@@ -18,19 +25,39 @@ For retirement purposes is it better to invest in an all equity portfolio or a t
 
 3. If your project is about prediction, what is your metrics of success? (What are you maximizing?) Can you find a baseline from prior work to give you a ball park to aim for?
 
+Maximize the utility gained 
+
 ## Necessary Data
 
 This section should cover:
 
 1. What does the final dataset need to look like (mostly dictated by the question and the availability of data):
     - What is an observation, e.g. a firm, or a firm-year, etc.
+          - Observation is daily-portfolio-returns
     - What is the sample period?
+          - 1959-2019
     - What are the sample conditions? (Years, restrictions you anticipate (e.g. exclude or require some industries)
+          - 60 years, 10 portfolios
+          - International stocks defined in paper
     - What variables are absolutely necessary and what would you like to have if possible?
+          - returns
+          - years
 2. What data do we have and what data do we need?
-3. How will we collect more data?
-4. What are the raw inputs and how will you store them (the folder structure(s) for each input type)?
-5. Speculate at a high level (not specific code!) about how you’ll transform the raw data into the final form.
+        - Data from the paper
+4. How will we collect more data?
+5.     stealing from the paper
+6. What are the raw inputs and how will you store them (the folder structure(s) for each input type)?
+7. 
+8. Speculate at a high level (not specific code!) about how you’ll transform the raw data into the final form.
+
+merge returns on year
+
+Get daily returns, make them yearly returns
+merge yearly returns together
+
+Security type
+return
+date
 
 
 
