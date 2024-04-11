@@ -9,6 +9,10 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 1. How do different inheritance goals affect portfolio optimization for retirement?
 2. Do different income levels affect the optimal portfolio choice?
     - If yes, then what portfolios are favored at different income levels?
+<br>
+
+**Prediction**
+
 
 * *research question findings will be reported in a markdown file*
 
