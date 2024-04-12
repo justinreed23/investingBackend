@@ -16,24 +16,35 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
 
 1. We will be using the utility equation to determine optimal portfolio selection from [Anarkulova, Cederburg, O'Doherty](Related_reading/Beyond_Status_Quo.pdf) (2023)
    1. Variable Definitions
-   2. C is defined as consumption in dollars
-   3. H is  
+   2. $C$ is defined as consumption in dollars
+   3. $H$ is number of people in household
+   4. $t$ is time since started saving (in months)
+   5. $\gamma$ is risk aversion
+      1. "Normal" is $3.82$
+      2. We will adjust this based on respondents self-described risk aversion
+   6. $theta$ is inheritance utility intensity
+      1. Normal is $2360 * 12^{\gamma}$
+      2. We will adjust this based on respondents self-described inheritance goals
+   7. $B$ is inheritance amount
+   8. $k$ is the extent to which inheritance is viewed as a luxury good
+      1. Normal is $490,000
+   9. $\Delta$ is the time between retirement age and savings age in months
 
 
-* *research question findings will be reported in a markdown file*
+* *Research question findings will be reported in a markdown file*
 
 ## Necessary Data
 1. The Data will be collected primarily from [Yahoo Finance](https://finance.yahoo.com/)
 2. The Unit of observation will be ETF-months
-3. Data collected will come from 5 chosen ETFs to represent different asset classes
+3. Data collected will come from chosen ETFs to represent different asset classes (Date Format: MM/DD/YYYY)
    1. [SPDR S&P 500 ETF Trust](https://finance.yahoo.com/quote/SPY/history?period1=728317800&period2=1712881748)
       1.  Inception Date: 1/29/1993
       2.  Asset Type: Domestic Stocks
       3.  Symbol: SPY
-   2. [Goldman Sachs MarketBeta Emer Mkt Eq ETF](https://finance.yahoo.com/quote/SPEM/history?period1=1174656600&period2=1712882062)
-      1. Inception Date: 3/23/2007
+   2. [Vanguard FTSE All-Wld ex-US Idx Admiral](https://finance.yahoo.com/quote/VFWAX/history2)
+      1. Inception Date: 9/27/2011
       2. Asset Type: International Stocks
-      3. Symbol: GSEE
+      3. Symbol: VFWAX
    3. [Vanguard Total Bond Market Index Fund](https://finance.yahoo.com/quote/BND?.tsrc=fin-srch)
       1. Inception Date: 4/10/2007
       2. Asset Type: Bonds
@@ -46,10 +57,22 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
       1. Inception Date: 9/29/2004
       2. Asset Type: Real Estate
       3. Symbol: VNQ
-   6. [Vanguard Target Retirement 2020 Fun](https://finance.yahoo.com/quote/VTWNX/history)
+   6. [Vanguard Target Retirement 2025 Fund](https://finance.yahoo.com/quote/VTTVX?.tsrc=fin-srch)
       1. Inception Date: 6/7/2006
       2. Asset Type: TDF (Stock/Bond Split)
-      3. Symbol: VTWNX
+      3. Symbol: VTTVX
+   7. [iShares Core Growth Allocation ETF](https://finance.yahoo.com/quote/AOR?.tsrc=fin-srch)
+      1. Inception Date: 4/11/2008
+      2. Asset Type: Traditional Stock/Bond Split
+      3. Symbol: AOR
+   8. [Regents Park Hedged Market Strategy ETF](https://finance.yahoo.com/quote/RPHS?.tsrc=fin-srch)
+      1. Inception Date: 3/30/2022
+      2. Asset Type: Risk Hedging(?)
+      3. Symbol: RPHS
+   9. [Strategy Shares Nasdaq 7 Handl Index ETF](https://finance.yahoo.com/quote/HNDL?.tsrc=fin-srch)
+      1.  Inception Date: 1/16/2018
+      2.  Asset Type: ETF ETF?
+      3.  Symbol: HNDL
 
 
 
