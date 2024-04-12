@@ -15,22 +15,22 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B+k)^{1-\gamma}}{1-\gamma}}$$
 
 1. We will be using the utility equation to determine optimal portfolio selection from [Anarkulova, Cederburg, O'Doherty](Related_reading/Beyond_Status_Quo.pdf) (2023)
-   1. Variable Definitions
-   2. $C$ is defined as consumption in dollars
-   3. $H$ is number of people in household
-   4. $t$ is time since started saving (in months)
-   5. $\gamma$ is risk aversion
+2. Variable Definitions
+   1. $C$ is defined as consumption in dollars
+   2. $H$ is number of people in household
+   3. $t$ is time since started saving (in months)
+   4. $\gamma$ is risk aversion
       1. "Normal" is $3.82$
       2. We will adjust this based on respondents self-described risk aversion
-   6. $\theta$ is inheritance utility intensity
+   5. $\theta$ is inheritance utility intensity
       1. Normal is $2360 * 12^{\gamma}$
       2. We will adjust this based on respondents self-described inheritance goals
-   7. $B$ is inheritance amount
-   8. $k$ is the extent to which inheritance is viewed as a luxury good
+   6. $B$ is inheritance amount
+   7. $k$ is the extent to which inheritance is viewed as a luxury good
       1. Normal is $490,000
-   9. $\Delta$ is the time between retirement age and savings age in months
-   10. Saving assumption is 10% of income if income is $>15000$
-   11. Ask respondent for expected income growth(?)
+   8. $\Delta$ is the time between retirement age and savings age in months
+   9.  Saving assumption is 10% of income if income is $>15000$
+   10. Ask respondent for expected income growth(?)
 
 
 * *Research question findings will be reported in a markdown file*
