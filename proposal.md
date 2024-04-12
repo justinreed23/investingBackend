@@ -12,10 +12,12 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 <br>
 
 **Prediction**
-$$U(C,B) = \sum_{t=481}^{T_{max}} \frac{(C^{i}_{t}/\sqrt{H^{i}_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B^{i}+k)^{1-\gamma}}{1-\gamma}}$$
+$$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B+k)^{1-\gamma}}{1-\gamma}}$$
 
-
-1. $U(C,B) = \sum_{t=481}^{T_{max}}$
+1. We will be using the utility equation to determine optimal portfolio selection from [Anarkulova, Cederburg, O'Doherty](Related_reading/Beyond_Status_Quo.pdf) (2023)
+   1. Variable Definitions
+   2. C is defined as consumption in dollars
+   3. H is  
 
 
 * *research question findings will be reported in a markdown file*
