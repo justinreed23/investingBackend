@@ -20,6 +20,7 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 1. Our final dataset will consist of monthly returns for 10 portfolios that are ETFs representative of certain securities(U.S stocks, International Stocks, bonds, bills, etc)
 2. Data will primarily be collected from: insert where to find returns for portfolios here
    1. The observation level for our final dataset will be portfolio-months
+2. 
 
 
 
