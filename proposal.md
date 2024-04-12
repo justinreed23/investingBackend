@@ -15,7 +15,7 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 $$U(C,B) = \sum_{t=481}^{T_{max}} \frac{(C^{i}_{t}/\sqrt{H^{i}_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B^{i}+k)^{1-\gamma}}{1-\gamma}}$$
 
 
-$U(C,B) = \sum_{t=481}^{T_{max}}$
+1. $U(C,B) = \sum_{t=481}^{T_{max}}$
 
 
 * *research question findings will be reported in a markdown file*
