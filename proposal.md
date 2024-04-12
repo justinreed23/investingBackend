@@ -13,15 +13,39 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 
 **Prediction**
 
+1. $U(C,B) = \sum_{t=481}^{T_{max}} \frac{(C^{i}_{t}/\sqrt{H^{i}_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B^{i}+k)^{1-\gamma}}{1-\gamma}}$
+
 
 * *research question findings will be reported in a markdown file*
 
 ## Necessary Data
-1. Our final dataset will consist of monthly returns for 10 portfolios that are ETFs representative of certain securities(U.S stocks, International Stocks, bonds, bills, etc)
-2. Data will primarily be collected from: insert where to find returns for portfolios here
-   1. The observation level for our final dataset will be portfolio-months
-2. 
-
+1. The Data will be collected primarily from [Yahoo Finance](https://finance.yahoo.com/)
+2. The Unit of observation will be ETF-months
+3. Data collected will come from 5 chosen ETFs to represent different asset classes
+   1. [SPDR S&P 500 ETF Trust](https://finance.yahoo.com/quote/SPY/history?period1=728317800&period2=1712881748)
+      1.  Inception Date: 1/29/1993
+      2.  Asset Type: Domestic Stocks
+      3.  Symbol: SPY
+   2. [Goldman Sachs MarketBeta Emer Mkt Eq ETF](https://finance.yahoo.com/quote/SPEM/history?period1=1174656600&period2=1712882062)
+      1. Inception Date: 3/23/2007
+      2. Asset Type: International Stocks
+      3. Symbol: GSEE
+   3. [Vanguard Total Bond Market Index Fund](https://finance.yahoo.com/quote/BND?.tsrc=fin-srch)
+      1. Inception Date: 4/10/2007
+      2. Asset Type: Bonds
+      3. Symbol: BND
+   4. [iShares 0-3 Month Treasury Bond ETF](https://finance.yahoo.com/quote/BIL/history?period1=1180531800&period2=1712883476)
+      1. Inception Date: 5/30/2007
+      2. Asset Type: Bills
+      3. Symbol: SGOV
+   5. [Vanguard Real Estate Index Fund ETF Shares](https://finance.yahoo.com/quote/VNQ/history?period1=1096464600&period2=1712883679)
+      1. Inception Date: 9/29/2004
+      2. Asset Type: Real Estate
+      3. Symbol: VNQ
+   6. [Vanguard Target Retirement 2020 Fun](https://finance.yahoo.com/quote/VTWNX/history)
+      1. Inception Date: 6/7/2006
+      2. Asset Type: TDF (Stock/Bond Split)
+      3. Symbol: VTWNX
 
 
 
