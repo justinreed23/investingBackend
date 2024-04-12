@@ -2,4 +2,4 @@
 
 
 
-1. $U(C,B) = \sum_{t=481}^{T_{max}}$
+1. $U(C,B) = \displaystyle\sum_{t=481}^{T_{max}}$
