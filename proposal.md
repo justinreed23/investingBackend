@@ -22,16 +22,28 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
    5. $\gamma$ is risk aversion
       1. "Normal" is $3.82$
       2. We will adjust this based on respondents self-described risk aversion
-   6. $theta$ is inheritance utility intensity
+   6. $\theta$ is inheritance utility intensity
       1. Normal is $2360 * 12^{\gamma}$
       2. We will adjust this based on respondents self-described inheritance goals
    7. $B$ is inheritance amount
    8. $k$ is the extent to which inheritance is viewed as a luxury good
       1. Normal is $490,000
    9. $\Delta$ is the time between retirement age and savings age in months
+   10. Saving assumption is 10% of income if income is $>15000$
+   11. Ask respondent for expected income growth(?)
 
 
 * *Research question findings will be reported in a markdown file*
+
+## Outputs
+* Graph comparing returns of each portfolio through the respondents expected saving periods
+  * Optimal portfolio will be highlighted in different color
+* Separate pages for each portfolio that show more details about each
+  * Gives numerical values for retirement consumption, total inheritance left
+* Possibly include calculator for retirement
+  * Ask respondent how much they want to spend/save during/for retirement
+  * Ask how much inheritance they want to leave
+  * Calculate necessary income and necessary retirement age(?)
 
 ## Necessary Data
 1. The Data will be collected primarily from [Yahoo Finance](https://finance.yahoo.com/)
@@ -73,41 +85,20 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
       1.  Inception Date: 1/16/2018
       2.  Asset Type: ETF ETF?
       3.  Symbol: HNDL
+4. The raw inputs for this data will be `.csv` files downloaded from Yahoo Finance
+   1. All of the datasets will be saved in the `inputs` folder
+      1. columns: Date, Open, High, Low, Close, Adj Close, Volume 
+   2. Any importannt dataframes and/or visualizations created from this data will be saved in the `outputs` folder  
+5. High-level Data cleaning plan
+
+* The datasets from yahoo finance generally have no missing price variables
+  * We will need to generate a return variable for each month
+  * Uncertain if using Adj. Close or Close **Need Feedback**
 
 
 
 
 ## Streamlit Dashboard
 
-Our final dataset will then be used to determine the optimal portfolio for a given investor using a list of parameters including
-1. Current age (Integer)
-2. Current income (float?)
-3. Expected income growth per year (float)
-4. expected retirement age (integer)
-5. risk aversion (Categorical: High, Medium, Low)
-6. Inheritance level (Categorical : High,medium,low, none)
-7. Saving rate? (Maybe assume 10%)
-8. Withdrawl rate for retirement assumed to be 4%
-9. Household Size
-10. utility function from study for retirement consumption
-    1.  $U(C^{i},B^{i}) = \sum_{t=481}^{T^{i}_{max}} \frac{(C^{i}_{t}/\sqrt{H^{i}_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B^{i}+k)^{1-\gamma}}{1-\gamma}}$
-    2.  Okay but what the fuck does that mean? **THIS NEEDS EDITING**
-    3.  C is consumption
-    4.  i is couple (we don't need this)
-    5.  t is month (0 is start savings)
-    6.  t = 481 isn't necessarily true it's just
-        1.  $Retirement\_age - start\_age = t$
-        2.  so for example
-        3.  $(65*12)-(25*12) + 1 = 481$
-    7.  $H^{i}_{t}$ is number of people in household at time t
-        1.  Basically consumption is divided by number of people in household because assumption is that consumption doesn't increase linearly(?)
-    8.  $\gamma$ is risk aversion
-        1.  The paper uses 3.84 following Duarte, Fonseca, Goodman, and Parker (2022)
-        2.  This will be a parameter (use 3.84 as medium?)
-    9. $B$ is the bequest of household
-       1.  How much they leave when they die
-    1. $\theta$ is bequest utility?
-       1. From paper De Nardi, French, and Jones (2016)
-       2. $\theta$ = 2360 in the study but we can raise/lower it
-       3. This is actually multipled by $12^{\gamma}$ to translate from annual -> monthly
-    2.  $k$ is the extent to which inheritance is viewed as a luxury good, K = $490,000
+We will host the dashboard on streamlit<br>
+[Link to Streamlit Dashboard](https://github.com/justinreed23/streamlitTesting)
