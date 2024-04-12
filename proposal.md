@@ -29,9 +29,9 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
    7. $k$ is the extent to which inheritance is viewed as a luxury good
       1. Normal is $490,000
    8. $\Delta$ is the time between retirement age and savings age in months
-   9.  Saving assumption is 10% of income if income is $>15000$
-   10. Ask respondent for expected income growth(?)
-
+   9.  $T^{max}$ is date of death.
+9.  Saving assumption is 10% of income if income is $>15000$
+10. Ask respondent for expected income growth(?)
 
 * *Research question findings will be reported in a markdown file*
 
