@@ -14,7 +14,7 @@ By Justin Reed, Maria Maragkelli, Reghan Hesser, Daniel Shin
 **Prediction**
 $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-\gamma}}{1-\gamma} + \theta{\frac{(B+k)^{1-\gamma}}{1-\gamma}}$$
 
-1. We will be using the utility equation to determine optimal portfolio selection from [Anarkulova, Cederburg, O'Doherty](Related_reading/Beyond_Status_Quo.pdf) (2023)
+1. We will be using the utility equation from [Anarkulova, Cederburg, O'Doherty](Related_reading/Beyond_Status_Quo.pdf) (2023) to determine optimal portfolio selection
 2. Variable Definitions
    1. $C$ is defined as consumption in dollars
    2. $H$ is number of people in household
@@ -88,12 +88,21 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
 4. The raw inputs for this data will be `.csv` files downloaded from Yahoo Finance
    1. All of the datasets will be saved in the `inputs` folder
       1. columns: Date, Open, High, Low, Close, Adj Close, Volume 
-   2. Any importannt dataframes and/or visualizations created from this data will be saved in the `outputs` folder  
-5. High-level Data cleaning plan
+   2. Any importannt dataframes and/or visualizations created from this data will be saved in the `outputs` folder
+5. Considering that the ETF inception date to now is often shorter than the span between savings start and retirement we need to figure out a way to estimate portfolio performance(machine learning?)
+
+6. High-level Data cleaning plan
 
 * The datasets from yahoo finance generally have no missing price variables
   * We will need to generate a return variable for each month
   * Uncertain if using Adj. Close or Close **Need Feedback**
+  * We will use a cumulative return function similar to previous assignments in order to calculate portfolio performance
+* Final Dataframe should look like<br>
+
+Portfolio|Date|Ret
+---|---|---
+SPY|1-1-2001|.01
+SPY|2-1-2001|.01
 
 
 
