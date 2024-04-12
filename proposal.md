@@ -17,7 +17,7 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
 1. We will be using the utility equation to determine optimal portfolio selection from [Anarkulova, Cederburg, O'Doherty](Related_reading/Beyond_Status_Quo.pdf) (2023)
    1. Variable Definitions
    2. C is defined as consumption in dollars
-   3. H is  
+   3. H is the number of people in a household
 
 
 * *research question findings will be reported in a markdown file*
