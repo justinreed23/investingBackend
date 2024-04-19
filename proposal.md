@@ -49,47 +49,49 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
 1. The Data will be collected primarily from [Yahoo Finance](https://finance.yahoo.com/)
 2. The Unit of observation will be ETF-months
 3. Data collected will come from chosen ETFs to represent different asset classes (Date Format: MM/DD/YYYY)
-   1. [SPDR S&P 500 ETF Trust](https://finance.yahoo.com/quote/SPY/history?period1=728317800&period2=1712881748)
+   a. [SPDR S&P 500 ETF Trust](https://finance.yahoo.com/quote/SPY/history?period1=728317800&period2=1712881748)
       1.  Inception Date: 1/29/1993
       2.  Asset Type: Domestic Stocks
       3.  Symbol: SPY
-   2. [Vanguard FTSE All-Wld ex-US Idx Admiral](https://finance.yahoo.com/quote/VFWAX/history2)
+   b. [Vanguard FTSE All-Wld ex-US Idx Admiral](https://finance.yahoo.com/quote/VFWAX/history2)
       1. Inception Date: 9/27/2011
       2. Asset Type: International Stocks
       3. Symbol: VFWAX
-   3. [Vanguard Total Bond Market Index Fund](https://finance.yahoo.com/quote/BND?.tsrc=fin-srch)
+   c. [Vanguard Total Bond Market Index Fund](https://finance.yahoo.com/quote/BND?.tsrc=fin-srch)
       1. Inception Date: 4/10/2007
       2. Asset Type: Bonds
       3. Symbol: BND
-   4. [iShares 0-3 Month Treasury Bond ETF](https://finance.yahoo.com/quote/BIL/history?period1=1180531800&period2=1712883476)
+   d. [iShares 0-3 Month Treasury Bond ETF](https://finance.yahoo.com/quote/BIL/history?period1=1180531800&period2=1712883476)
       1. Inception Date: 5/30/2007
       2. Asset Type: Bills
       3. Symbol: SGOV
-   5. [Vanguard Real Estate Index Fund ETF Shares](https://finance.yahoo.com/quote/VNQ/history?period1=1096464600&period2=1712883679)
+   e. [Vanguard Real Estate Index Fund ETF Shares](https://finance.yahoo.com/quote/VNQ/history?period1=1096464600&period2=1712883679)
       1. Inception Date: 9/29/2004
       2. Asset Type: Real Estate
       3. Symbol: VNQ
-   6. [Vanguard Target Retirement 2025 Fund](https://finance.yahoo.com/quote/VTTVX?.tsrc=fin-srch)
+   f. [Vanguard Target Retirement 2025 Fund](https://finance.yahoo.com/quote/VTTVX?.tsrc=fin-srch)
       1. Inception Date: 6/7/2006
       2. Asset Type: TDF (Stock/Bond Split)
       3. Symbol: VTTVX
-   7. [iShares Core Growth Allocation ETF](https://finance.yahoo.com/quote/AOR?.tsrc=fin-srch)
+   g. [iShares Core Growth Allocation ETF](https://finance.yahoo.com/quote/AOR?.tsrc=fin-srch)
       1. Inception Date: 4/11/2008
       2. Asset Type: Traditional Stock/Bond Split
       3. Symbol: AOR
-   8. [Regents Park Hedged Market Strategy ETF](https://finance.yahoo.com/quote/RPHS?.tsrc=fin-srch)
+   h. [Regents Park Hedged Market Strategy ETF](https://finance.yahoo.com/quote/RPHS?.tsrc=fin-srch)
       1. Inception Date: 3/30/2022
       2. Asset Type: Risk Hedging(?)
       3. Symbol: RPHS
-   9. [Strategy Shares Nasdaq 7 Handl Index ETF](https://finance.yahoo.com/quote/HNDL?.tsrc=fin-srch)
+   i. [Strategy Shares Nasdaq 7 Handl Index ETF](https://finance.yahoo.com/quote/HNDL?.tsrc=fin-srch)
       1.  Inception Date: 1/16/2018
       2.  Asset Type: ETF ETF?
       3.  Symbol: HNDL
-4. The raw inputs for this data will be `.csv` files downloaded from Yahoo Finance
-   1. All of the datasets will be saved in the `inputs` folder
-      1. columns: Date, Open, High, Low, Close, Adj Close, Volume 
-   2. Any importannt dataframes and/or visualizations created from this data will be saved in the `outputs` folder
-5. Considering that the ETF inception date to now is often shorter than the span between savings start and retirement we need to figure out a way to estimate portfolio performance(machine learning?)
+4. The raw input for this data will be one `.csv` file containing the following columns: Name, Date, AdjClose. This will be saved in the `inputs` folder
+   a. From this dataset, we will calculate a monthly return for each ETF and store that in a column called Ret
+   b. We will convert this 'tall' dataset to a 'wide' one, that includes a row for each 'Date' and a column for each ETF's 'Ret' on that date
+   c. We will drop all rows that are missing at least one ETF
+   d. Finally, we will randomly pull rows to create a dataframe with 600 rows (12 months * 50 years) and convert this back to a tall dataframe. This will be our final dataframe.
+   
+6. Any importannt dataframes and/or visualizations created from this data will be saved in the `outputs` folder
 
 6. High-level Data cleaning plan
 
