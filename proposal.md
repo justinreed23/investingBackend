@@ -86,9 +86,13 @@ $$U(C,B) = \displaystyle\sum_{t=\Delta}^{T_{max}} \frac{(C_{t}/\sqrt{H_{t}})^{1-
       2.  Asset Type: ETF ETF?
       3.  Symbol: HNDL
 4. The raw input for this data will be one `.csv` file containing the following columns: Name, Date, AdjClose. This will be saved in the `inputs` folder
+   
    a. From this dataset, we will calculate a monthly return for each ETF and store that in a column called Ret
+   
    b. We will convert this 'tall' dataset to a 'wide' one, that includes a row for each 'Date' and a column for each ETF's 'Ret' on that date
+   
    c. We will drop all rows that are missing at least one ETF
+   
    d. Finally, we will randomly pull rows to create a dataframe with 600 rows (12 months * 50 years) and convert this back to a tall dataframe. This will be our final dataframe.
    
 6. Any importannt dataframes and/or visualizations created from this data will be saved in the `outputs` folder
