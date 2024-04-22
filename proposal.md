@@ -124,3 +124,6 @@ AOR|3-1-2001|.034
 
 We will host the dashboard on streamlit<br>
 [Link to Streamlit Dashboard](https://github.com/justinreed23/streamlitTesting)
+<br>
+
+![](https://raw.githubusercontent.com/justinreed23/investingBackend/main/Pictures/Main_dashboard_page.png)
